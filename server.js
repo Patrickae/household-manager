@@ -19,7 +19,7 @@ app.use(bodyParser.json({type: 'application/vnd.api+json'}))
 //set static folder
 app.use(express.static('./public'))
 
-app.get("*", function(req, res) {
+app.get('*', function(req, res) {
   res.sendFile(__dirname + '/view/public/index.html')
 })
 
