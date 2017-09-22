@@ -13,7 +13,9 @@ class Main extends React.Component{
 	}
 
 	switchLang(lang){
-		lang === 'Spanish'? this.setState({firstWord:'Hola', secondWord:'Mundo!' }): this.setState({firstWord:'Hello', secondWord:'World!' })
+		lang === 'Spanish'? 
+		this.setState({firstWord:'Hola', secondWord:'Mundo!' }): 
+		this.setState({firstWord:'Hello', secondWord:'World!' })
 		
 	}
 	render(){
