@@ -18,6 +18,8 @@ class Main extends React.Component{
 		this.setState({firstWord:'Hola', secondWord:'Mundo!' }): 
 		lang === "French"?
 		this.setState({firstWord:'Bonjour', secondWord:'Le Monde!' }): 
+		lang === "Samoan"?
+		this.setState({firstWord:'alofa fiafia i', secondWord:'le lalolagi!' }): 
 		this.setState({firstWord:'Hello', secondWord:'World!' })
 		
 	}
@@ -29,6 +31,7 @@ class Main extends React.Component{
 			<TestComp lang='English' switchLang={this.switchLang}/>
 			<TestComp lang='Spanish' switchLang={this.switchLang}/>
 			<TestComp lang='French' switchLang={this.switchLang}/>
+			<TestComp lang='Samoan' switchLang={this.switchLang}/>
 			
 
 			</div>
